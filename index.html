@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Thuốc Thiện Tâm | Dược Phẩm Chính Hãng, Uy Tín</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#059669',
+                        secondary: '#10b981',
+                        dark: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .hero-pattern {
+            background-color: #f0fdf4;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-location-dot mr-2"></i>236 Phan Văn Hân, Phường Gia Định, TP.HCM</span>
+                <span><i class="fa-solid fa-clock mr-2"></i>Giờ mở cửa: 07:30 - 22:00</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-phone mr-2"></i>Hotline: 0392 368 648 - 0345 169 009</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="bg-primary text-white p-2 rounded-lg mr-3">
+                        <i class="fa-solid fa-house-medical text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-primary leading-tight">NHÀ THUỐC THIỆN TÂM</h1>
+                        <p class="text-xs text-gray-500 font-medium">TẬN TÂM VÌ SỨC KHỎE</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
+                    <a href="#ve-chung-toi" class="hover:text-primary transition">Về Chúng Tôi</a>
+                    <a href="#danh-muc" class="hover:text-primary transition">Sản Phẩm</a>
+                    <a href="#danh-gia" class="hover:text-primary transition">Đánh Giá</a>
+                    <a href="#lien-he" class="hover:text-primary transition">Liên Hệ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-primary text-sm font-semibold mb-6">
+                    <i class="fa-solid fa-star text-yellow-500"></i> Đánh giá 4.7/5 trên Google Maps
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-dark leading-tight mb-6">
+                    Điểm tựa sức khỏe <br/>
+                    <span class="text-primary">cho mọi gia đình</span>
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Hộ Kinh Doanh Nhà Thuốc Thiện Tâm cam kết cung cấp thuốc thành phẩm, mỹ phẩm và thực phẩm chức năng chính hãng. Đội ngũ dược sĩ chuyên nghiệp luôn sẵn sàng tư vấn tận tình.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#danh-muc" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                        Xem Danh Mục Dịch Vụ
+                    </a>
+                    <a href="https://share.google/lmkCIlo0CJkEcjWeK" target="_blank" class="bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 font-semibold py-3 px-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-primary"></i> Chỉ đường Google Maps
+                    </a>
+                </div>
+            </div>
+            <!-- Trust Indicators -->
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 hover:shadow-md transition text-center">
+                    <div class="w-14 h-14 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fa-solid fa-check-shield"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">100% Chính Hãng</h3>
+                    <p class="text-sm text-gray-500">Nguồn gốc rõ ràng, minh bạch</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 hover:shadow-md transition text-center">
+                    <div class="w-14 h-14 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Tư Vấn Tận Tâm</h3>
+                    <p class="text-sm text-gray-500">Dược sĩ chuyên môn cao</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 hover:shadow-md transition text-center">
+                    <div class="w-14 h-14 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Giá Cả Hợp Lý</h3>
+                    <p class="text-sm text-gray-500">Bình ổn thị trường</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-emerald-50 hover:shadow-md transition text-center">
+                    <div class="w-14 h-14 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Phục Vụ Nhanh</h3>
+                    <p class="text-sm text-gray-500">Mở cửa từ 07:30 sáng</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Catalog -->
+    <section id="danh-muc" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-bold tracking-wider text-sm uppercase">Ngành nghề kinh doanh</span>
+                <h2 class="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">Danh Mục Sản Phẩm & Dịch Vụ</h2>
+                <p class="mt-4 text-lg text-gray-500">Phục vụ đầy đủ nhu cầu chăm sóc sức khỏe gia đình theo đúng tiêu chuẩn quy định của Bộ Y Tế.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-emerald-50 flex items-center justify-center">
+                        <i class="fa-solid fa-capsules text-6xl text-emerald-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Thuốc Thành Phẩm</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Cung cấp thuốc kê đơn và không kê đơn điều trị bệnh, nguồn gốc rõ ràng từ các hãng dược phẩm uy tín trong nước và quốc tế.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-blue-50 flex items-center justify-center">
+                        <i class="fa-solid fa-leaf text-6xl text-blue-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">TPCN & Dinh Dưỡng</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Đa dạng thực phẩm chức năng, vitamin, thực phẩm dinh dưỡng hỗ trợ tăng cường đề kháng và cải thiện thể trạng.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-rose-50 flex items-center justify-center">
+                        <i class="fa-solid fa-stethoscope text-6xl text-rose-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Trang Thiết Bị Y Tế & Mỹ Phẩm</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Máy đo huyết áp, máy thử đường huyết, vật tư y tế gia đình và các dòng dược mỹ phẩm chăm sóc da an toàn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps & Contact -->
+    <section id="lien-he" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
+                <!-- Info Section -->
+                <div class="lg:w-2/5 p-10 bg-primary text-white">
+                    <h3 class="text-2xl font-bold mb-6">Thông Tin Liên Hệ</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-map-pin mt-1 text-emerald-300 text-xl w-8"></i>
+                            <div>
+                                <strong class="block text-lg mb-1">Địa chỉ</strong>
+                                <span class="text-emerald-100 leading-relaxed">236 Phan Văn Hân, Phường Gia Định,<br/>Thành phố Hồ Chí Minh</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-phone-volume mt-1 text-emerald-300 text-xl w-8"></i>
+                            <div>
+                                <strong class="block text-lg mb-1">Điện thoại</strong>
+                                <span class="text-emerald-100">0392 368 648 (Zalo)<br/>0345 169 009</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-envelope mt-1 text-emerald-300 text-xl w-8"></i>
+                            <div>
+                                <strong class="block text-lg mb-1">Email</strong>
+                                <span class="text-emerald-100"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3c5d585155527c52545d485449535f4854555952485d51124f54534c">[email&#160;protected]</a></span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-clock mt-1 text-emerald-300 text-xl w-8"></i>
+                            <div>
+                                <strong class="block text-lg mb-1">Giờ hoạt động</strong>
+                                <span class="text-emerald-100 block">Thứ 2 - Thứ 5, CN: 07:30 - 22:00</span>
+                                <span class="text-emerald-100 block">Thứ 6 - Thứ 7: 07:30 - 21:30</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Google Maps Embed -->
+                <div class="lg:w-3/5 h-96 lg:h-auto min-h-[400px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.230751963959!2d106.70038027415174!3d10.793627258872584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a9c7019e33%3A0xdd958ae083cec3e9!2zTmjDoCB0aHXhu5FjIFRoaeG7h24gVMOibQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - IMPORTANT LEGAL INFO FOR DUNS -->
+    <footer class="bg-dark text-gray-300 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 border-b border-gray-700 pb-12">
+                
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-house-medical text-primary text-2xl"></i>
+                        <span class="text-white text-xl font-bold">HỘ KINH DOANH NHÀ THUỐC THIỆN TÂM</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed max-w-md">
+                        Chúng tôi tự hào là đơn vị cung cấp dược phẩm, mỹ phẩm và trang thiết bị y tế uy tín, bảo vệ sức khỏe cho cộng đồng tại khu vực Phường Gia Định và TP. Hồ Chí Minh.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg border-b border-gray-700 pb-2 inline-block">Thông Tin Dịch Vụ</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><strong class="text-gray-200">Dược phẩm:</strong> Thuốc kê đơn và không kê đơn</li>
+                        <li><strong class="text-gray-200">Sức khỏe:</strong> Thực phẩm chức năng và dinh dưỡng</li>
+                        <li><strong class="text-gray-200">Thiết bị:</strong> Vật tư y tế gia đình</li>
+                        <li><strong class="text-gray-200">Tư vấn:</strong> Hỗ trợ khách hàng tận tâm</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg border-b border-gray-700 pb-2 inline-block">Menu</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-primary transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>Trang chủ</a></li>
+                        <li><a href="#danh-muc" class="hover:text-primary transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>Sản phẩm</a></li>
+                        <li><a href="#lien-he" class="hover:text-primary transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>Liên hệ</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center">
+                <p>© 2026 Bản quyền thuộc về Hộ Kinh Doanh Nhà Thuốc Thiện Tâm.</p>
+            </div>
+        </div>
+    </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"87266ff388f84ed8b6726c08f1eb9ab7","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
